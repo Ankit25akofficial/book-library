@@ -169,6 +169,7 @@ const displayBooksBatch = (totalNumFound, query) => {
         searchResultElement.style.display = 'none';
     }
 };
+//
 
 loadMoreBtn.addEventListener('click', () => {
     displayBooksBatch(allBookDocs.length, searchField.value.trim());
@@ -181,4 +182,5 @@ searchField.addEventListener('keypress', function(event) {
         searchResultElement.innerHTML = '';
         loadData();
     }
+
 });
